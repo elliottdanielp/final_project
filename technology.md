@@ -15,4 +15,4 @@ SciKitLearn is the ML library we'll be using to create a classifier. Our trainin
 
 
 ## Dashboard
-In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
+In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on Tableau.
