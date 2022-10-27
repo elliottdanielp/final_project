@@ -15,7 +15,7 @@ The reason the grop chose this question to answer is in Aprill of 2012 the Titan
 
 With the help of Kagle the team was able to aquire multiple data sets, with information ranging from Passanger name's, sex, age all the way to if they had parents, sibilings or a spouse on board. The data sets also include where the passanger embarked from with 3 options for the passangers - Southampton, Cherbourg and Queenstown. 
 
-Will the Titanic II ever set sail or sink? Who knows, but if it does will the passangers face the same fate as the original?
+Will the Titanic II ever set sail? Who knows, but if it does will the passangers face the same fate as the original?
 
 
 
