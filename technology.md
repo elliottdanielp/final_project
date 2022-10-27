@@ -1,6 +1,9 @@
 # Technologies Used
 ## Data Cleaning and Analysis
-Kaggle will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
+   
+   Our main source file will be as such in the main branch:
+    /final_project/MachineLearningModel.ipynb
 
 
 
