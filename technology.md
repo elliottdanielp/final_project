@@ -3,30 +3,27 @@
 Pandas will be used to clean the data and perform an exploratory analysis. Further analysis will be completed using Python.
    
 
-
-
-
 ## Database Storage
 PgAdmin is the database we intend to use, and we will integrate Flask to display the data.
 
 ### Our Main structure will be:
 
-CREATE TABLE IF NOT EXISTS public.titanic_main
-(
-    passegerID integer NOT NULL,
-    survived integer,
-    pclass integer,
-    name text,
-    sex text,
-    age numeric,
-    sibsp integer,
-    parch integer,
-    ticket text,
-    cabin text,
-    embarked text,
-    fare numeric,
-    CONSTRAINT titanic_main_pkey PRIMARY KEY (passegerID)
-)
+- CREATE TABLE IF NOT EXISTS public.titanic_main
+- (
+    - passegerID integer NOT NULL,
+    - survived integer,
+    - pclass integer,
+    - name text,
+    - sex text,
+    - age numeric,
+    - sibsp integer,
+    - parch integer,
+    - ticket text,
+    - cabin text,
+    - embarked text,
+    - fare numeric,
+    - CONSTRAINT titanic_main_pkey PRIMARY KEY (passegerID)
+- )
 
 Example data:
 
