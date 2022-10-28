@@ -2,7 +2,7 @@
 ## Data Cleaning and Analysis
 Panda DataFrame will be used to clean the data and perform an exploratory analysis. Pandas allows data engineers to provide descriptive statiscs that summarize central tendency, dispersion and the overall shape of datasets distribution and values.  It allows analysis for numeric and object series and data frames of mixed types to output data for critical decision making.  
 
-Further analysis will be completed using Python.
+Further analysis will be completed using other Python segments as well. 
    
 
 ## Database Storage
@@ -44,7 +44,7 @@ Example data:
 
 
 ## Machine Learning
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is ___. Extra ML verbiage here.
+SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is setup to be a Logistic Regression Classifier 
 
 - Our main source file will be as such in the main branch:
     /final_project/MachineLearningModel.ipynb
