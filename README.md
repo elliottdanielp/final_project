@@ -45,7 +45,8 @@ Features:
 -	Number of Siblings Aboard
 -	Number of Parents Aboard
 -	Price of Ticket
--	Port of Embarkation 
+-	Port of Embarkation
+
 Target:
 -	Survived or not
 
