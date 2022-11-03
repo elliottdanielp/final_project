@@ -26,16 +26,17 @@ Will the Titanic II ever set sail? Who knows, but if it does will the passengers
 
 # Machine Learning Model
 ## Overview
-Can we create a machine learning model to predict which passengers will survive based on certain characteristics? To answer this question, we will target whether or not the passenger survived the shipwreck.
+Can we create a machine learning model to predict what types of passengers survived the crash? To answer this question, we will feature the characteristics about the passenger in the model and target if they survived or not.
 
 ## Data Preprocessing
-1. Our dataset has 12 columns with 891 separate data points.
+1. Our dataset has 12 columns with 1309 separate data points. 11 columns containing passenger information and 1 column determining their survival. 0 equating to not surviving and 1 equating to survival.
 2. Name and Passenger ID are variables are not needed in a Machine Learning Model, so they are dropped. 
-3. After checking the number of unique values, I noticed 681 of the 891 values for ticket were unique, with no ticket occurring more than 7 times. Ticket is not a helpful feature for our machine learning model, so it is dropped.
-4. Next, I looked at the null values in our dataset. 687 of the 891 values for cabin are null. This is around 77% of the dataset. Cabin would be a good predictor of survival as cabins closer to the impact could have a lower chance of survival. However, there are too many null values to use in our model, so it is dropped. 
-5. I dropped all the rows with null values and rows that duplicates. The machine learning model cannot handle null values and we do not want to overfit our model with any duplicate rows. This left 8 columns and 674 data points. Our preprocessing removed 217 data points.
-6. Lastly, the non-numeric values need to be converted into numeric values. To do so, I took all the non-numeric features and engineered “n” separate columns, where “n” is the number of unique values that exist in that column. The newly created columns will be either 0 or a 1. For example, the Sex column was originally “Male or Female”. It will turn into two new columns of Sex Male and Sex Female. If the original column had male as a result the Sex Male column will be 1 and the Sex Female column will be 0.
-7. We finish our preprocessing with 11 columns and 674 rows.
+3. After checking the number of unique values, I noticed 929 of the 1309 values for ticket were unique, with no ticket occurring more than 11 times. The ticket column refers to the unique ID ticket that was bought. This has no relation to if the passenger survived. Therefore, ticket is not a helpful feature for our machine learning model, so it is dropped.
+4. Next, I looked at the null values in our dataset. Due to the small size of our dataset, we will attempt to keep as many rows as possible and fill in any null values. The two major columns for null values are age and cabin. All null values for the cabin column will be filled with "u" for unknown. All age values will be filled in taking the average value of the two ages they are next to in the dataset.
+5. The cabin column now has 187 unique values. Known cabin values are in the form A 46, where A is the deck and 46 is the room. All odd numbered cabins are on the starboard(right) side and all even numbered cabins are on the port(left) side. I broke cabin into two separate rows. The first column is Deck, which contains values A through G, T, and Unknown. This consists of 9 unique values. The second column is Cabin_Location. This column contains values of starboard, port, or neither. We finish by dropping cabin row as the Deck and Cabin_Location columns represent the same values.
+6. Now that the name, ID, and ticket number are dropped, 87 out of our 1309 rows have duplicate values. This is due to two different people sharing the exact same characteristics. Since the dataset is small and they are different passengers, I decided to leave them in the dataset for the model. Usually duplicate values overfit, but that is not a concern due to the dataset size.
+7. Lastly, the non-numeric values need to be converted into numeric values. To do so, I took all the non-numeric features and engineered “n” separate columns, where “n” is the number of unique values that exist in that column. The newly created columns will be either 0 or a 1. For example, the Sex column was originally “Male or Female”. It will turn into two new columns of Sex Male and Sex Female. If the original column had male as a result the Sex Male column will be 1 and the Sex Female column will be 0.
+8. We finish our preprocessing with 23 columns and 1309 rows.
 
 ## Features and Targets
 Features:
@@ -46,9 +47,11 @@ Features:
 -	Number of Parents Aboard
 -	Price of Ticket
 -	Port of Embarkation
+-   Deck Location
+-   Cabin Location
 
 Target:
--	Survived or not
+-	Survived the shipwreck
 
 ## Training and Testing Model
 The data will be randomly split into a training and a testing set. 75% of the data will be randomly selected to be in the training set. The we will use this data to train or fit the machine learning model. The remaining 25% of the data will be used to test the validity of our model.
