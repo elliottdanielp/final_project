@@ -59,3 +59,20 @@ The data will be randomly split into a training and a testing set. 75% of the da
 The training and testing datasets are then scaled to the unit variance of the training set. This reduces the impact of outliers and standardizes the values across columns so that one column isn’t weighted more due to its values being larger.
 
 ## Description of Model
+### Overview
+The model we are using is a Gradient Boosted Classifier model. The boosting element is it uses a large number of weak learning models that each learn from each other to create a stronger learning model. The gradient aspect is each model learns from the errors of the previous. 
+
+We choose this because it is a classifier model that can be highly accurate and can be tuned to increase performance. 
+
+### Pros and Cons
+Benefits of the model:
+- Classifier model that is able to predict both numerical and categorical values.
+- Training off of weakness makes the model highly accurate
+- Has several hyperparameters such as learning rate and estimators that can be adjusted to increase performance
+
+Downsides of the model:
+- The model will keep trying to minimize errors and can emphasize outliers too much and overfit easily
+- Complex "black box" model that can be computationally intense
+
+### Results
+Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
