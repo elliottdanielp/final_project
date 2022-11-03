@@ -83,7 +83,6 @@ Downsides of the model:
 
 ### Results
 Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
-=======
 
 
 https://docs.google.com/presentation/d/1fPfQUhDatXaTUa1Yei5ws-fKyiqXjxEmRdNtDGr36yE/edit?usp=sharing
