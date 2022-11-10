@@ -40,7 +40,6 @@ titanic_df["Cabin"].fillna("U", inplace=True)
 titanic_df.interpolate(method="linear", inplace=True)
 
 # Create two functions to engineer new rows from Cabin
-
 # Pass cabin information and return the deck
 def get_deck(cabin):
     # Return First Character of Cabin 

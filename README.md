@@ -82,7 +82,7 @@ Downsides of the model:
 - Complex "black box" model that can be computationally intense
 
 ### Results
-Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
+Our model has an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement.
 
 
 [Google Slides](https://docs.google.com/presentation/d/1fPfQUhDatXaTUa1Yei5ws-fKyiqXjxEmRdNtDGr36yE/edit?usp=sharing)
