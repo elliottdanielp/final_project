@@ -28,7 +28,7 @@ Dashboard will consist of:
 The main tool used to create the dashboard will be Tableau. The Tableau dashboard will have an assortment of interactive charts. 
 Tableau is a data visualization tool that helps create interactive graphs and charts in the form of dashboards and worksheets to gain insights into a data source.
 
-By using Tableau public our viewers will be able to interact with our analysis as the charts will offer information about all the data.  
+By using Tableau public our viewers will be able to interact with our analysis by using the Passenger Lookup. With the passenger lookup a user can select a name from the drop down to view if they survived or not what class they are and their age along with other measures. The viewrs will also be able to sort the list by Male or Female. Also the list can be filtered by just class to show who survived or not from a selected class. Finaly the list can be filterd by all the survivers.   
 
 
 # Machine Learning Model
