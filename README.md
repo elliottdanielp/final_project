@@ -142,7 +142,7 @@ Downsides of the model:
 
 ### Results
 
-Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
+After adjusting the number of weak learners and rate at which the models learn to optimize performance, our model had an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement. These improvement areas are to use a random forest model to look at feature importance, perform dimensionality reduction, and switch from the gradient boosted classifier model.
 
 #   Summary
 -   Age, Class and Gender were major factors in deciding who would have better chance of survival on the Titanic.  The location from which the passengers departed are less of a factor for analysis.  Using Machine Learning, Jupyter Notebook, PgAdmin, Postgres, Tableau and Google Slides we are to wrap up the data project
