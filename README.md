@@ -28,12 +28,13 @@ Dashboard will consist of:
 The main tool used to create the dashboard will be Tableau. The Tableau dashboard will have an assortment of interactive charts. 
 Tableau is a data visualization tool that helps create interactive graphs and charts in the form of dashboards and worksheets to gain insights into a data source.
 
-By using Tableau public our viewers will be able to interact with our analysis as the charts will offer information about all the data.  
+By using Tableau public our viewers will be able to interact with our analysis by using the Passenger Lookup. With the passenger lookup a user can select a name from the drop down to view if they survived or not what class they are and their age along with other measures. The viewrs will also be able to sort the list by Male or Female. Also the list can be filtered by just class to show who survived or not from a selected class. Finaly the list can be filterd by all the survivers.   
 
+[Tableau Dashboard](https://public.tableau.com/app/profile/dan5194/viz/Titanic_Dashboard_16674008648990/Titanic_Dashboard)
 
 # Machine Learning Model
 ## Overview
-Can we create a machine learning model to predict what types of passengers survived the crash? To answer this question, we will feature the characteristics about the passenger in the model and target if they survived or not.
+Can we create a machine learning model to predict what types of passengers survived the crash? Moreover, which characteristics of a passenger lead them to be saved. To answer this question, we will feature the characteristics about the titanic passengers in the model and target if they survived or not.
 
 ## Data Preprocessing
 1. Our dataset has 12 columns with 1309 separate data points. 11 columns containing passenger information and 1 column determining their survival. 0 equating to not surviving and 1 equating to survival.
@@ -82,6 +83,7 @@ Downsides of the model:
 - Complex "black box" model that can be computationally intense
 
 ### Results
+
 Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
 
 # Visuals And Analysis
@@ -91,6 +93,9 @@ Our model was able to predict 86% of the test values. This is solid, but still l
 - Of the approx. 2200 passengers, roughly 900 are support staff and crew and the remaining 1309 are passengers.  Our data set will be strictly associated with the passengers on board, research in inquiry led us to find that not much readily accessible data was available for the 900 or so employees that lost their lives aboard the Titanic. 
 - The overall survival rate for passengers…….37.7%
 A mere 494 of 1309 passengers survived and rescued. 
+
+After adjusting the number of weak learners and rate at which the models learn to optimize performance, our model had an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement. These improvement areas are to use a random forest model to look at feature importance, perform dimensionality reduction, and switch from the gradient boosted classifier model.
+
 
 ## Passenger Age
 ### Age Analysis
