@@ -33,7 +33,7 @@ By using Tableau public our viewers will be able to interact with our analysis a
 
 # Machine Learning Model
 ## Overview
-Can we create a machine learning model to predict what types of passengers survived the crash? To answer this question, we will feature the characteristics about the passenger in the model and target if they survived or not.
+Can we create a machine learning model to predict what types of passengers survived the crash? Moreover, which characteristics of a passenger lead them to be saved. To answer this question, we will feature the characteristics about the titanic passengers in the model and target if they survived or not.
 
 ## Data Preprocessing
 1. Our dataset has 12 columns with 1309 separate data points. 11 columns containing passenger information and 1 column determining their survival. 0 equating to not surviving and 1 equating to survival.
