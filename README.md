@@ -34,7 +34,7 @@ By using Tableau public our viewers will be able to interact with our analysis b
 
 # Machine Learning Model
 ## Overview
-Can we create a machine learning model to predict what types of passengers survived the crash? To answer this question, we will feature the characteristics about the passenger in the model and target if they survived or not.
+Can we create a machine learning model to predict what types of passengers survived the crash? Moreover, which characteristics of a passenger lead them to be saved. To answer this question, we will feature the characteristics about the titanic passengers in the model and target if they survived or not.
 
 ## Data Preprocessing
 1. Our dataset has 12 columns with 1309 separate data points. 11 columns containing passenger information and 1 column determining their survival. 0 equating to not surviving and 1 equating to survival.
@@ -83,8 +83,7 @@ Downsides of the model:
 - Complex "black box" model that can be computationally intense
 
 ### Results
-Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
-
+After adjusting the number of weak learners and rate at which the models learn to optimize performance, our model had an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement. These improvement areas are to use a random forest model to look at feature importance, perform dimensionality reduction, and switch from the gradient boosted classifier model.
 
 [Google Slides](https://docs.google.com/presentation/d/1fPfQUhDatXaTUa1Yei5ws-fKyiqXjxEmRdNtDGr36yE/edit?usp=sharing)
 
