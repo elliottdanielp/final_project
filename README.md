@@ -1,13 +1,9 @@
-# final_project - Titanic_Passenger_Survival
-
-## Communication Protocols
-
-![team_communication_2](https://user-images.githubusercontent.com/106495422/198314850-c9e5acbf-42a1-47bc-92cf-9494c95e862d.png)
-
-
 # Selected Topic
 
 Titanic Passenger Survival...
+
+[Google Slides](https://docs.google.com/presentation/d/1fPfQUhDatXaTUa1Yei5ws-fKyiqXjxEmRdNtDGr36yE/edit?usp=sharing)  
+[Tableau Dashboard](https://public.tableau.com/app/profile/dan5194/viz/Titanic_Dashboard_16674008648990/Titanic_Dashboard)
 
 Did the survival rate of the Titanic have anything to do with what class the passenger was in? Or was it the passengers age or maybe their sex that played a role in the survival rate? What if them having siblings or a spouse on board played a role?
 
@@ -16,6 +12,68 @@ The reason the group chose this question to answer is in April of 2012 the Titan
 With the help of Kaggle the team was able to acquire multiple data sets, with information ranging from Passenger name's, sex, age all the way to if they had parents, siblings or a spouse on board. The data sets also include where the passenger embarked from with 3 options for the passengers - Southampton, Cherbourg and Queenstown.
 
 Will the Titanic II ever set sail? Who knows, but if it does will the passengers face the same fate as the original?
+
+# Visuals And Analysis
+## Analysis Overview
+-   The analysis for this project will be mostly be handled using Tableau visualization.  Data graphs and charts provided will help answer questions in regard to survival rate on the Titanic.
+- Many different factors affected the outcome of passengers survival.  Manipulating the source data will allowed representation for the 1309 passenger survivors on the journey of the unsinkable ship. 
+- Of the approx. 2200 passengers, roughly 900 are support staff and crew and the remaining 1309 are passengers.  Our data set will be strictly associated with the passengers on board, research in inquiry led us to find that not much readily accessible data was available for the 900 or so employees that lost their lives aboard the Titanic. 
+- The overall survival rate for passengers…….37.7%
+A mere 494 of 1309 passengers survived and rescued. 
+
+After adjusting the number of weak learners and rate at which the models learn to optimize performance, our model had an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement. These improvement areas are to use a random forest model to look at feature importance, perform dimensionality reduction, and switch from the gradient boosted classifier model.
+
+
+## Passenger Age
+### Age Analysis
+- What was the average age of the passengers aboard?
+    - The average age of all the passengers in our database was approximately 29.88 years of age 
+    - Using an average age of around 30 you can see that the most common gender would male that were in 2nd class
+    - This is closely followed by females in the 2nd class as well.  
+
+- Who was the oldest Passenger aboard the ship?
+    - The oldest per recorded on the Titanic was 80 years of age and was a bit of an outlier, but not enough to skew any data as the age of passengers has a steady decline versus a dramatic downfall
+
+- There were approximately 39 children under 3 recorded of which 21 survived for a rate of only 53.8%, a morbid stat but considering the conditions that they incurred is rather impressive.
+
+- Increase age range to single digits (“All women and children only!”) with an age of 9 and under increase the survival rate a dismal amount to 54.9%.  45 of the 82.  
+
+-   And the main group of passengers represented by treemap has  survival statistics for 10-54. 
+
+## Passenger Class
+### Class Analysis
+- The average fare for first class varied greatly from 2nd and 3rd.  They were mostly located in decks “A” and “B”.  These were the only two levels above the main deck. There were 494 survivors in total
+
+- The total number of 1st class passengers came in at 186 or 36.7% that survived
+
+- 2nd class not much lower with 117 or 23.7% 
+
+- 3rd class had a194 or 39.3%, the last 0.3% was represented in null values.
+
+- 2nd class survival:
+    - Unfortunately a lot of the cabin data was not found and or recorded from passengers that survived.  
+    -   With a few bits data we could make a strong argument that 2nd class was mainly concentrated in the D, E, and F decks of the Titanic.  
+
+## Passenger Gender
+### Gender Analysis
+
+- Which gender had the best survival rate?
+    -   Females had a much better rate of survival over males with all 385:109, nearly 3.5x’s survival
+    -   There was no significant class or location determinations when it came to loading the rescue boats according to the statistics
+
+-   Consist with analysis already presented, another few visuals to help understand that class had no effect on the survival rate
+
+-   Once again you can see that males in the 2nd class or middles decks of the ship had the worst chance of making it out with their lives
+
+-   What gender had the highest average fare for each class?
+    -   Interestingly enough Female from Cherbourg were the highest charges gender over males except for in Queenstown were the average was very similar
+
+## Departure Locaions
+### Cherbourg, France ; Queenstown, Ireland ; Southhampton, England 
+
+-   There is a strong correlation in the data between the destination in which passengers got on board the Titanic and survival rate.  This is because of the fact that of the 1309 passengers, 914 of them boarded in England
+
+-   Since nearly 70% of the passengers boarded from the same location, this could potentially skew any data that were to be analyzed with a starting point of departure locations 
 
 # Dashboard
 
@@ -85,68 +143,6 @@ Downsides of the model:
 ### Results
 
 Our model was able to predict 86% of the test values. This is solid, but still leaves room for improvement.
-
-# Visuals And Analysis
-## Analysis Overview
--   The analysis for this project will be mostly be handled using Tableau visualization.  Data graphs and charts provided will help answer questions in regard to survival rate on the Titanic.
-- Many different factors affected the outcome of passengers survival.  Manipulating the source data will allowed representation for the 1309 passenger survivors on the journey of the unsinkable ship. 
-- Of the approx. 2200 passengers, roughly 900 are support staff and crew and the remaining 1309 are passengers.  Our data set will be strictly associated with the passengers on board, research in inquiry led us to find that not much readily accessible data was available for the 900 or so employees that lost their lives aboard the Titanic. 
-- The overall survival rate for passengers…….37.7%
-A mere 494 of 1309 passengers survived and rescued. 
-
-After adjusting the number of weak learners and rate at which the models learn to optimize performance, our model had an accuracy score of 86.28%. This means it correctly identified 86.28% of the test values into survived or died. This is solid, but still leaves room for improvement. These improvement areas are to use a random forest model to look at feature importance, perform dimensionality reduction, and switch from the gradient boosted classifier model.
-
-
-## Passenger Age
-### Age Analysis
-- What was the average age of the passengers aboard?
-    - The average age of all the passengers in our database was approximately 29.88 years of age 
-    - Using an average age of around 30 you can see that the most common gender would male that were in 2nd class
-    - This is closely followed by females in the 2nd class as well.  
-
-- Who was the oldest Passenger aboard the ship?
-    - The oldest per recorded on the Titanic was 80 years of age and was a bit of an outlier, but not enough to skew any data as the age of passengers has a steady decline versus a dramatic downfall
-
-- There were approximately 39 children under 3 recorded of which 21 survived for a rate of only 53.8%, a morbid stat but considering the conditions that they incurred is rather impressive.
-
-- Increase age range to single digits (“All women and children only!”) with an age of 9 and under increase the survival rate a dismal amount to 54.9%.  45 of the 82.  
-
--   And the main group of passengers represented by treemap has  survival statistics for 10-54. 
-
-## Passenger Class
-### Class Analysis
-- The average fare for first class varied greatly from 2nd and 3rd.  They were mostly located in decks “A” and “B”.  These were the only two levels above the main deck. There were 494 survivors in total
-
-- The total number of 1st class passengers came in at 186 or 36.7% that survived
-
-- 2nd class not much lower with 117 or 23.7% 
-
-- 3rd class had a194 or 39.3%, the last 0.3% was represented in null values.
-
-- 2nd class survival:
-    - Unfortunately a lot of the cabin data was not found and or recorded from passengers that survived.  
-    -   With a few bits data we could make a strong argument that 2nd class was mainly concentrated in the D, E, and F decks of the Titanic.  
-
-## Passenger Gender
-### Gender Analysis
-
-- Which gender had the best survival rate?
-    -   Females had a much better rate of survival over males with all 385:109, nearly 3.5x’s survival
-    -   There was no significant class or location determinations when it came to loading the rescue boats according to the statistics
-
--   Consist with analysis already presented, another few visuals to help understand that class had no effect on the survival rate
-
--   Once again you can see that males in the 2nd class or middles decks of the ship had the worst chance of making it out with their lives
-
--   What gender had the highest average fare for each class?
-    -   Interestingly enough Female from Cherbourg were the highest charges gender over males except for in Queenstown were the average was very similar
-
-## Departure Locaions
-### Cherbourg, France ; Queenstown, Ireland ; Southhampton, England 
-
--   There is a strong correlation in the data between the destination in which passengers got on board the Titanic and survival rate.  This is because of the fact that of the 1309 passengers, 914 of them boarded in England
-
--   Since nearly 70% of the passengers boarded from the same location, this could potentially skew any data that were to be analyzed with a starting point of departure locations 
 
 #   Summary
 -   Age, Class and Gender were major factors in deciding who would have better chance of survival on the Titanic.  The location from which the passengers departed are less of a factor for analysis.  Using Machine Learning, Jupyter Notebook, PgAdmin, Postgres, Tableau and Google Slides we are to wrap up the data project
