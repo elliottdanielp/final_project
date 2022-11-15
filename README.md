@@ -141,17 +141,15 @@ Downsides of the model:
 - Complex "black box" model that can be computationally intense
 
 ### Results
-After adjusting the number of weak learners and rate at which the models learn to optimize performance we were able to obtain the below results:
+After adjusting the number of weak learners and rate at which the models learn to optimize performance we were able to obtain the below results in a confusion matrix:
 
 ![](Resources/MLM/ConfustionMatrix.PNG)
-> Confusion Matrix
 
 328 passengers make up the test data, since the testing data randomly selected 25% of the total data. The model was able to correctly predict 178 who actually died out of 204 and 105 who actually survived out of 124. This gives our model had an accuracy score of 86.28%, or 283 out of 328. It was able correctly identified 86.28% of the test values into survived or died.
 
 So what characteristics of a passenger impacted our model the most? Below is a chart of each feature and how much on average it would decrease our accuracy score if omitted:
 
 ![](Resources/MLM/GBC_FeatureImportance.PNG)
-> Feature Importance
 
 Our model was able to achieve a high level of accuracy by focusing on if the passenger was a female or not. If the passenger was a male or not, their age, how much their ticket was, and class also played a significant role. The number of siblings, parents, and where their cabin was located had little effect on the accuracy score of our model.
 
